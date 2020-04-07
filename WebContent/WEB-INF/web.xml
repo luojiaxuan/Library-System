@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>library</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>doLogin</servlet-name>
+    <servlet-class>servlet.doLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>doRegister</servlet-name>
+    <servlet-class>servlet.doRegister</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>do_add_book</servlet-name>
+    <servlet-class>servlet.do_add_book</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>do_add_booktype</servlet-name>
+    <servlet-class>servlet.do_add_booktype</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>do_borrow_book</servlet-name>
+    <servlet-class>servlet.do_borrow_book</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>do_return_book</servlet-name>
+    <servlet-class>servlet.do_return_book</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>do_book_detail</servlet-name>
+    <servlet-class>servlet.do_book_detail</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>do_update_book</servlet-name>
+    <servlet-class>servlet.do_update_book</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>do_modify_personMsg</servlet-name>
+    <servlet-class>servlet.do_modify_personMsg</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>do_delete_book</servlet-name>
+    <servlet-class>servlet.do_delete_book</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>doLogin</servlet-name>
+    <url-pattern>/doLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>doRegister</servlet-name>
+    <url-pattern>/doRegister</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>do_add_book</servlet-name>
+    <url-pattern>/do_add_book</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>do_add_booktype</servlet-name>
+    <url-pattern>/do_add_booktype</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>do_borrow_book</servlet-name>
+    <url-pattern>/do_borrow_book</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>do_return_book</servlet-name>
+    <url-pattern>/do_return_book</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>do_book_detail</servlet-name>
+    <url-pattern>/do_book_detail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>do_update_book</servlet-name>
+    <url-pattern>/do_update_book</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>do_modify_personMsg</servlet-name>
+    <url-pattern>/do_modify_personMsg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>do_delete_book</servlet-name>
+    <url-pattern>/do_delete_book</url-pattern>
+  </servlet-mapping>
+  	
+  <filter>
+  <filter-name>encoding</filter-name>
+  <filter-class>Filter.EncodingFilter</filter-class>
+  <init-param>
+  	<param-name>encoding</param-name>
+  	<param-value>utf-8</param-value>
+  </init-param>
+  </filter>
+  
+  <filter-mapping>
+  <filter-name>encoding</filter-name>
+  <url-pattern>/*</url-pattern>
+  
+  </filter-mapping>
+</web-app>
